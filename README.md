@@ -5,7 +5,7 @@ I have spent a lot of time in researching and setting up this EFI. Enjoy. Just p
 ## What's Working?
 
 ### Audio
-**Everythings work including External Microphone!**
+**Everythings work including External Microphone! Use layout-id 21 alongwith combojack and remove ssdt-alc256.aml file from acpi**
 _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for External Microphone and proper sound presets & hda verbs)_
 
 ### Bluetooth, WiFi & Ethernet
@@ -34,6 +34,9 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
 
 ### Webcam
 - Works fine
+
+### Fingerprint
+- Why would you event think that? It will not work... :( 
 
 ### iMessages & Facetime
 - This is not working on my machine may be it will work on your machine
