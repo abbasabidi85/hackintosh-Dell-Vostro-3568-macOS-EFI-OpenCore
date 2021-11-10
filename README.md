@@ -9,7 +9,7 @@ I have spent a lot of time in researching and setting up this EFI. Enjoy. Just p
 _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for External Microphone and proper sound presets & hda verbs)_
 
 ### Bluetooth, WiFi & Ethernet
-- Bluetooth works including streating audio, battery indicator and auto connect.
+- Bluetooth works including streaming audio, battery indicator and auto connect.
 - Use INTEL WIRELESS 3165 or any other compatible WIFI card.
   _I have used **"Intel Wireless 3165"** card._
 - Realtek 8111/8168/8411 series
