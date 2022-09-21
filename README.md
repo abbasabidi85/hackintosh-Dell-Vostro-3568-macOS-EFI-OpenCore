@@ -24,6 +24,7 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
  
 ### Battery
 - Works fine after Power Management using CPUFriendFriend 
+![alt text](https://i.imgur.com/iodSPES.png)
 
 ### Touchpad & Keyboard
 - Work smoothly, including all gestures!
