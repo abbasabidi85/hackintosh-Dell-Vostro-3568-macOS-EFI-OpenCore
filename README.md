@@ -1,6 +1,13 @@
 # Dell-Vostro-3568-macOS-EFI-OpenCore
 OpenCore EFI for Dell Vostro 3568 i5-7th gen. Everything works. Enjoy.
-I have spent a lot of time in researching and setting up this EFI. Enjoy. Just put the EFI folder in EFI partition and boot it up.
+I have spent a lot of time in researching and setting up this EFI. Enjoy. You have to just put the EFI folder in EFI partition and boot it up but there's a catch.
+
+##Things you are supposed to do before installation.
+**Generate Platform Info and add into the config plist, follow this [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html#platforminfo). (_After adding platform info in config plist you can just boot it up and install_)  
+
+##Things you are supposed to do after the installation.
+**Install ComboJack for proper functioning of 3.5mm headphone jack.
+**Generate CPUFriendFriend Kext on your own and put it in Kext folder.
 
 ## What's Working?
 
@@ -41,6 +48,6 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
 
 ### iMessages & Facetime
 - Working fine (you may not get it working at first you need to set platform info values properly and reset the NVRAM)
-- Other iCLoud services are working just fine
+- Other iCLoud services are working just fine except "Hey Siri" feature.
 
 **Note:** _Do not forget to generate your own PlatformInfo!_ _Follow this [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html#platforminfo) to generate PlatformInfo_
