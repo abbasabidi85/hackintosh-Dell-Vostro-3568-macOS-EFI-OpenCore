@@ -1374,7 +1374,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>x86legacy</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1483,14 +1483,6 @@
 				<key>SystemAudioVolume</key>
 				<data>
 				Rg==
-				</data>
-				<key>bluetoothExternalDongleFailed</key>
-				<data>
-				AA==
-				</data>
-				<key>bluetoothInternalControllerInfo</key>
-				<data>
-				AAAAAAAAAAAAAAAAAAA=
 				</data>
 				<key>boot-args</key>
 				<string>-wegnoegpu itlwm_cc=IN </string>
