@@ -13,7 +13,7 @@ I have spent a lot of time in researching and setting up this EFI. Enjoy. You ha
 ## What's Working?
 
 ### Audio
-**Everythings work including External Microphone! Use layout-id 13 alongwith combojack and remove ssdt-alc256.aml file from acpi**
+**Everythings work including External Microphone! Use layout-id 11 alongwith combojack and remove ssdt-alc256.aml file from acpi**
 _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for External Microphone and proper sound presets & hda verbs)_
 
 ### Bluetooth, WiFi & Ethernet
@@ -24,12 +24,11 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
  
 ### Battery
 - Works fine after Power Management using CPUFriendFriend 
-![alt text](https://i.imgur.com/iodSPES.png)
+![alt text](https://i.imgur.com/8nBO7gZ.png)
 
 ### Touchpad & Keyboard
 - Work smoothly, including all gestures!
-- Keyboard works including brightness keys
-  _(Brightness can be controlled using **Fn + s** & **Fn + b** too)_
+- Keyboard works including brightness keys (**Fn 11** & **Fn 12**)
   
 ### Display & Graphic Acceleration
 - Working smoothly (HDMI audio & Video works)
