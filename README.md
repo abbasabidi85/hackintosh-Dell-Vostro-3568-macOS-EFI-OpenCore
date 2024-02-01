@@ -7,7 +7,7 @@ I have spent a lot of time in researching and setting up this EFI. Enjoy. You ha
 (_After adding platform info in config plist you can just boot it up and install_)  
 
 ## Things you are supposed to do after the installation.
-- **Set `SecureBootModel` to `x86legacy` in Misc -> Security -> SecureBootModel**
+- **Set `SecureBootModel` from `Disabled` to `x86legacy` in Misc -> Security -> SecureBootModel**
 - **Install ComboJack for proper functioning of 3.5mm headphone jack.**
 - **Generate CPUFriendFriend Kext on your own and put it in Kext folder.**
 
