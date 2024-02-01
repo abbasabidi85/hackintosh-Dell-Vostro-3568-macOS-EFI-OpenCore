@@ -54,11 +54,69 @@
 				<key>Path</key>
 				<string>SSDT-KEY-DELL-WN09.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HPET _CRS (Needs _CRS to XCRS Rename)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sets plugin-type to 1 on first Processor object</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-BRT6.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BRT6.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>BRT6 to XRT6</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				QlJUNgKgC5M=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				WFJUNgKgC5M=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
+			</dict>
 			<dict>
 				<key>Base</key>
 				<string></string>
@@ -103,7 +161,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>change _OSI to XOSI</string>
+				<string>_OSI to XOSI rename - requires SSDT-XOSI.aml</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -119,6 +177,7 @@
 				</data>
 				<key>OemTableId</key>
 				<data>
+				AAAAAA==
 				</data>
 				<key>Replace</key>
 				<data>
@@ -133,6 +192,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -141,14 +201,14 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>change BRT6 to BRTX</string>
+				<string>HPET _STA to XSTA Rename</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				FCBCUlQ2Ag==
+				EV9TVEE=
 				</data>
 				<key>Limit</key>
 				<integer>0</integer>
@@ -157,10 +217,11 @@
 				</data>
 				<key>OemTableId</key>
 				<data>
+				AAAAAA==
 				</data>
 				<key>Replace</key>
 				<data>
-				FCBCUlRYAg==
+				EVhTVEE=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -171,6 +232,167 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS Rename</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				JV9DUlM=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>Replace</key>
+				<data>
+				JVhDUlM=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>IPIC IRQ 2 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				IgQAeQA=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>Replace</key>
+				<data>
+				IgAAeQA=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>RTC IRQ 8 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				IgABeQA=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>Replace</key>
+				<data>
+				IgAAeQA=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>TIMR IRQ 0 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				IgEAeQA=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>Replace</key>
+				<data>
+				IgAAeQA=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
 				</data>
 			</dict>
 		</array>
@@ -262,6 +484,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>FixupAppleEfiImages</key>
+			<false/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -393,7 +617,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>13</integer>
+				<integer>11</integer>
 				<key>model</key>
 				<string>Sunrise Point-LP HD Audio</string>
 			</dict>
@@ -403,15 +627,21 @@
 				<data>
 				AQAAAA==
 				</data>
-				<key>#model</key>
-				<string>Intel HD Graphics 620</string>
+				<key>#device-id</key>
+				<data>
+				G1kAAA==
+				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				AAAbWQ==
 				</data>
-				<key>device-id</key>
+				<key>backlight-smoother-lowerbound</key>
 				<data>
-				G1kAAA==
+				BQAAAA==
+				</data>
+				<key>enable-backlight-smoother</key>
+				<data>
+				AQAAAA==
 				</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>
@@ -543,13 +773,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>IntelBTPatcher.kext</string>
+				<string>BlueToolFixup.kext</string>
 				<key>Comment</key>
-				<string>IntelBTPatcher</string>
+				<string>BlueToolFixup</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelBTPatcher</string>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -579,13 +809,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>BlueToolFixup.kext</string>
+				<string>IntelBTPatcher.kext</string>
 				<key>Comment</key>
-				<string>BlueToolFixup</string>
+				<string>IntelBTPatcher</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BlueToolFixup</string>
+				<string>Contents/MacOS/IntelBTPatcher</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -637,7 +867,7 @@
 				<key>Comment</key>
 				<string>Audio patches</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VerbStub</string>
 				<key>MaxKernel</key>
@@ -676,24 +906,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>19.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>BrightnessKeys.kext</string>
-				<key>Comment</key>
-				<string>BrightnessKeys</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrightnessKeys</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1286,6 +1498,8 @@
 			<false/>
 			<key>HideAuxiliary</key>
 			<false/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Full</string>
 			<key>LauncherPath</key>
@@ -1485,7 +1699,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-wegnoegpu itlwm_cc=IN </string>
+				<string>-wegnoegpu itlwm_cc=IN keepsyms=1 alcverbs=1</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
@@ -1889,6 +2103,8 @@
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
@@ -1958,6 +2174,8 @@
 			<false/>
 			<key>OSInfo</key>
 			<false/>
+			<key>PciIo</key>
+			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
@@ -1988,6 +2206,8 @@
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
