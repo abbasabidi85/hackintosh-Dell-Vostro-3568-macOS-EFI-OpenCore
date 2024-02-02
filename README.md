@@ -26,11 +26,14 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
 ### Battery
 - Works fine after Power Management using CPUFriendFriend 
 ![alt text](https://i.imgur.com/8nBO7gZ.png)
-- Sleep and Hibernation works, make sure to run the following commands in terminal
-  `sudo pmset -a hibernatemode 25`
-  `sudo pmset -a standbydelaylow 1800`
-  `sudo pmset -a standbydelayhigh 3600`
-  `sudo pmset -a autopoweroffdelay 10800`
+- Sleep and Hibernation works, make sure to run the following commands in terminal:
+<pre>
+  sudo pmset -a hibernatemode 25
+  sudo pmset -a standbydelaylow 1800
+  sudo pmset -a standbydelayhigh 3600
+  sudo pmset -a autopoweroffdelay 10800
+</pre>
+  
 
 ### Touchpad & Keyboard
 - Work smoothly, including all gestures!
