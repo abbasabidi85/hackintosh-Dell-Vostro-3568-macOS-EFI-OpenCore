@@ -1,4 +1,5 @@
 # Dell-Vostro-3568-macOS-EFI-OpenCore
+![alt text](https://i.imgur.com/8nBO7gZ.png)
 OpenCore EFI for Dell Vostro 3568 i5-7th gen. Everything works. Enjoy.
 I have spent a lot of time in researching and setting up this EFI. Enjoy. You have to just put the EFI folder in EFI partition and boot it up but there's a catch.
 
@@ -25,7 +26,6 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
  
 ### Battery
 - Works fine after Power Management using CPUFriendFriend 
-![alt text](https://i.imgur.com/8nBO7gZ.png)
 - Sleep and Hibernation works, make sure to run the following commands in terminal:
 <pre>
   sudo pmset -a hibernatemode 25
