@@ -26,9 +26,9 @@ _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for Externa
  
 ### Battery
 - Works fine after Power Management using CPUFriendFriend 
-- Sleep and Hibernation works, make sure to run the following commands in terminal:
+- Sleep works, make sure to run the following commands in terminal:
 <pre>
-  sudo pmset -a hibernatemode 25
+  sudo pmset -a hibernatemode 3
   sudo pmset -a standbydelaylow 1800
   sudo pmset -a standbydelayhigh 3600
   sudo pmset -a autopoweroffdelay 10800
