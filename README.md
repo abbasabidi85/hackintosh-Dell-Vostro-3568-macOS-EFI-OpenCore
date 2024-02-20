@@ -15,7 +15,7 @@ I have spent a lot of time in researching and setting up this EFI. Enjoy. You ha
 ## What's Working?
 
 ### Audio
-**Everythings work including External Microphone! Use layout-id 11 alongwith combojack and remove ssdt-alc256.aml file from acpi**
+**Everythings work including External Microphone! Use layout-id 12 alongwith combojack and remove ssdt-alc256.aml file from acpi**
 _(Install [ComboJack](https://github.com/hackintosh-stuff/ComboJack) for External Microphone and proper sound presets & hda verbs)_
 
 ### Bluetooth, WiFi & Ethernet
